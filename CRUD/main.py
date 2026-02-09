@@ -42,6 +42,13 @@ def create_table_favoritos():
     '''
     return sql_create_table
 
+def inserts():
+    sql_inserts = '''
+    INSERT INTO series.series_favoritas (name, status, last_watched_at, created_at, updated_at, deleted_at)
+    VALUES ('The Mentalist', 'watching', NOW(), NOW(), NOW(), NULL);
+    '''
+    return sql_inserts
+
 def read_rows():
     sql_read = '''
     SELECT * FROM series.series_favoritas;    
@@ -73,11 +80,17 @@ def soft_delete():
 
 try:
     with connection.cursor() as cursor:
-
+        # CREATE_DB
         cursor.execute(sql_create_database())
+        # USE DB
         cursor.execute(use_database())
+        # CREATE TABLE
         cursor.execute(create_table_favoritos())
+        # INSERT INTO
+        cursor.execute(inserts())
+        # SAVE ROWS
         connection.commit()
+        # READ_ROWS
         cursor.execute(read_rows())
         result = cursor.fetchall()
         print(result)
