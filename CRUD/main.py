@@ -28,7 +28,7 @@ def create_table_favoritos():
     sql_create_table = '''
     CREATE TABLE IF NOT EXISTS series_favoritas (
         id INT AUTO_INCREMENT PRIMARY KEY,
-        name VARCHAR(255) NOT NULL UNIQUE,
+        name VARCHAR(255) NOT NULL,
         status ENUM('plan_to_watch','watching','paused','completed','dropped') NOT NULL DEFAULT 'plan_to_watch',
         last_watched_at DATETIME NULL,
         created_at DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
@@ -45,13 +45,13 @@ def create_table_favoritos():
 def inserts():
     sql_inserts = '''
     INSERT INTO series.series_favoritas (name, status, last_watched_at, created_at, updated_at, deleted_at)
-    VALUES ('The Mentalist', 'watching', NOW(), NOW(), NOW(), NULL);
+    VALUES (%s, %s, NOW(), NOW(), NOW(), NULL);
     '''
     return sql_inserts
 
 def read_rows():
     sql_read = '''
-    SELECT * FROM series.series_favoritas;    
+    SELECT * FROM series.series_favoritas WHERE deleted_at IS NULL;    
     '''
     return sql_read
 
@@ -59,7 +59,8 @@ def update_rows():
     sql_update = '''
     UPDATE series.series_favoritas 
     SET status = %s
-    WHERE id = %s;
+    WHERE id = %s
+    AND deleted_at IS NULL;
     '''
     return sql_update
 
