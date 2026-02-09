@@ -80,6 +80,7 @@ def soft_delete():
 
 try:
     with connection.cursor() as cursor:
+        
         # CREATE_DB (IF NOT EXISTS)
         cursor.execute(sql_create_database())
         # USE DB
