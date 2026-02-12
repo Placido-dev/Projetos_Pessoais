@@ -1,0 +1,21 @@
+id_cliente,nome,email,cidade,data_cadastro,status
+1,Guilherme Silva,gui@gmail.com,São Paulo,2024-01-10,ativo
+2,Ana Souza, ana.souza@gmail.com ,Rio de Janeiro,2024-02-05,ativo
+3,Carlos Lima,carlos.lima@gmail,Campinas,2024-02-30,ativo
+4,Mariana Alves,,Santos,2024-03-12,ativo
+5,João Pedro,joao@gmail.com,,2024-01-25,inativo
+6,Beatriz Costa,beatriz.costa@gmail.com,São Paulo,2024-13-01,ativo
+7,Felipe Rocha,felipe.rocha@gmail.com,São Paulo,2024-04-15,ATIVO
+8,Juliana Martins,juliana.martins@gmail.com,Guarulhos,2024-04-20,ativo
+9,Juliana Martins,juliana.martins@gmail.com,Guarulhos,2024-04-20,ativo
+10,Rafael Oliveira,rafael.oliveira@gmail.com,Osasco,2024-05-02,pendente
+11,Patricia Melo,patricia.melo@gmail.com,São Paulo,2024-05-10,ativo
+12,Lucas Ferreira,lucas.ferreira@gmail.com,São Paulo,2024-05-15,inativo
+13,Lucas Ferreira,lucas.ferreira@gmail.com,São Paulo,2024-05-15,inativo
+14,Carla Dias,carla.dias@gmail.com,Campinas,2024-06-01,ativo
+15,Thiago Santos,thiago.santos@gmail.com,Campinas,2024-06-05,ativo
+16,Bruna Lima,bruna.lima@gmail.com,São Paulo,2024-06-07,ativo
+17,Pedro Henrique,pedro.henrique@gmail.com,Rio de Janeiro,2024-06-10,ativo
+18,Fernanda Nunes,fernanda.nunes@gmail.com, ,2024-06-11,ativo
+19,Roberto Silva,roberto.silva@gmail.com,São Paulo,2024-06-12,ativo
+20,Roberto Silva,roberto.silva@gmail.com,São Paulo,2024-06-12,ativo

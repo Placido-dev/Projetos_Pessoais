@@ -1,0 +1,25 @@
+id_pedido,produto,categoria,quantidade,preco_unitario
+1001,Mouse Gamer,Periféricos,1,120.50
+1002,Teclado Mecânico,Periféricos,1,89.90
+1003,Headset,Periféricos,0,0
+1004,Cadeira Gamer,Móveis,1,59.90
+1005,Monitor 24,Eletrônicos,1,-10.00
+1006,Notebook,Eletrônicos,1,199.90
+1007,Mousepad,Periféricos,2,25.00
+1008,Webcam,Eletrônicos,1,220.00
+1009,HD Externo,Eletrônicos,1,75.50
+1010,HD Externo,Eletrônicos,1,75.50
+1011,SSD 1TB,Eletrônicos,1,180.00
+1012,Microfone,Eletrônicos,1,99.99
+1013,Notebook,Eletrônicos,1,300.00
+1014,Cabo HDMI,Acessórios,2,22.50
+1015,Teclado Mecânico,Periféricos,1,250.00
+1016,Mouse Gamer,Periféricos,1,110.00
+1017,Mousepad,Periféricos,1,60.00
+1018,Monitor 27,Eletrônicos,1,500.00
+1019,Adaptador USB,Acessórios,1,30.00
+1020,Cadeira Gamer,Móveis,1,90.00
+1021,Mouse Gamer,Periféricos,1,150.00
+1022,Mouse Gamer,Periféricos,1,150.00
+1023,Mouse Gamer,Periféricos,1,150.00
+9999,Produto Fantasma,Outros,1,10.00
