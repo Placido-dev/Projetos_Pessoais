@@ -35,3 +35,24 @@ print(
     e o seu novo salario é de: {novo_salario}
     '''
 )
+
+preco_mercadoria = int(input('Digite o preço da mercadoria: '))
+percentual_desconto = int(input('Digite o valor do desconto: '))
+subtracao = preco_mercadoria - (preco_mercadoria * percentual_desconto / 100)
+print(
+    f'''
+    O desconto é de: {percentual_desconto} %
+    Valor total a pagar com desconto: {subtracao}
+    '''
+)
+
+distancia = float(input('Digite a distância em km: '))
+velocidade_media = float(input('Digite a velocidade média do carro: '))
+tempo = distancia / velocidade_media
+print(
+    f'''
+    A distância será de: {distancia} km
+    A velocidade média será de: {velocidade_media} km/h
+    Logo o tempo da viagem será de: {tempo:.2f} horas.
+    '''
+)
