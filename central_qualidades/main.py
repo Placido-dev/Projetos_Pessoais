@@ -20,7 +20,8 @@ lista_columns = [
     'cidade',
     'status',
 ]
+print(type(lista_columns))
 
 filtro[lista_columns] = filtro[lista_columns].astype(str).apply(lambda s: s.str.strip())
-print(filtro)
+print(type(filtro['email']))
 
