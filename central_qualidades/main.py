@@ -23,5 +23,4 @@ lista_columns = [
 print(type(lista_columns))
 
 filtro[lista_columns] = filtro[lista_columns].astype(str).apply(lambda s: s.str.strip())
-print(type(filtro['email']))
-
+print(type(filtro))
