@@ -56,3 +56,12 @@ print(
     Logo o tempo da viagem será de: {tempo:.2f} horas.
     '''
 )
+
+temperatura = int(input('Digite a temperatura: '))
+conversao_F = (temperatura * 9 / 5) + 32
+print(
+    f'''
+    A temperatura digitada foi: {temperatura} ºC
+    Convertendo para farenheit: {conversao_F} ºF
+    '''
+)
