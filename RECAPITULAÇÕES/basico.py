@@ -65,3 +65,32 @@ print(
     Convertendo para farenheit: {conversao_F} ºF
     '''
 )
+
+km_percorrido_usuario = float(input('Digite a quantidade de km percorrido: '))
+dias_alugado = int(input('Digite a quantidade de dias que o carro foi alugado: '))
+
+diaria = 60
+valor_por_km = 0.15
+
+calculo_final = (dias_alugado * diaria) + (km_percorrido_usuario * valor_por_km)
+print(
+    f'''
+    Você alugou o carro por {dias_alugado} dias, 
+    Valor total a pagar: {calculo_final:.2f} R$.
+    '''
+)
+
+qtd_cigarros_dia = int(input('Digite quantos cigarros você fuma por dia: '))
+anos_fumando = float(input('Digite quantos anos você fuma: '))
+
+numero_dias_fumando = anos_fumando * 365
+total_cigarros_fumados_no_periodo = qtd_cigarros_dia * numero_dias_fumando
+minutos_perdidos = total_cigarros_fumados_no_periodo * 10
+dias_perdidos = minutos_perdidos / 1440
+
+print(
+    f'''
+    Você fuma {qtd_cigarros_dia} cigarros no dia, durante {anos_fumando} anos.
+    Se continuar assim vai pro saco preto, você já perdeu {dias_perdidos:.2f} dias de vida.
+    '''
+)
