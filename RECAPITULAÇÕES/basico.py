@@ -94,3 +94,33 @@ print(
     Se continuar assim vai pro saco preto, você já perdeu {dias_perdidos:.2f} dias de vida.
     '''
 )
+
+velocidade = int(input('Digite a velocidade: '))
+limite = 80
+excesso = velocidade - limite
+multa = excesso * 5
+
+if velocidade >= limite:
+    print(
+        f'''
+        Você foi multado, sua velocidade foi de {velocidade},
+        E terá que pagar uma multa de {multa:.2f} R$.
+        '''
+    )
+else:
+    print('Passou sem multa')
+
+
+numero_1 = int(input('Digite o primeiro número: '))
+numero_2 = int(input('Digite o segundo número: '))
+
+if numero_1 > numero_2:
+    print(
+        f'''
+        Printando o primeiro valor: {numero_1}
+    ''')
+else:
+    print(
+        f'''
+        Printando o segundo valor: {numero_2}
+    ''')
