@@ -124,3 +124,23 @@ else:
         f'''
         Printando o segundo valor: {numero_2}
     ''')
+
+seu_salario = float(input('Digite o seu salário: '))
+aumento = 0
+
+if seu_salario > 1250:
+    aumento = seu_salario * 0.10
+    novo_salario = seu_salario + aumento
+    print(
+        f'''
+        Seu salário terá um aumento de: R${aumento:.2f} reais.
+        Você receberá R${novo_salario:.2f} reais.
+        ''')
+else:
+    aumento = seu_salario * 0.15
+    novo_salario = seu_salario + aumento
+    print(
+        f'''
+        Seu salário terá um aumento de: R${aumento:.2f} reais.
+        Você receberá R${novo_salario:.2f} reais.
+        ''')    
