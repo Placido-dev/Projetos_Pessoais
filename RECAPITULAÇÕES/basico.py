@@ -143,4 +143,18 @@ else:
         f'''
         Seu salário terá um aumento de: R${aumento:.2f} reais.
         Você receberá R${novo_salario:.2f} reais.
-        ''')    
+        ''')
+
+distancia_desejada = float(input('Digite a distancia que quer andar em km: '))
+tarifa_1 = 0.50
+tarifa_2 = 0.45
+
+if distancia_desejada <= 200:
+    total = tarifa_1 * distancia_desejada
+else:
+    total = tarifa_2 * distancia_desejada
+
+print(
+    f'''
+    Total a pagar da tarifa: R${total} reais.
+    ''')    
