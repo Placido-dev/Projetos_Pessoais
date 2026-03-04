@@ -207,4 +207,4 @@ else:
     print(
     f'''
     Aprovado, sua prestação mensal ficou em R${prestacao_mensal:.2f} reais mensais 
-    ''')    
+    ''')
