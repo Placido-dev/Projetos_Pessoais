@@ -190,3 +190,21 @@ elif choice == '/':
     print(f'Você escolheu {choice}, então iremos dividir os números {first_number} e {second_number} total = {divisao}')
 else:
     print('Preciso que digite uma operação dentre as que pedi.')
+
+valor_casa = float(input('Digite o valor da casa para a compra: '))
+salario_atual = float(input('Digite o seu salário atual: '))
+anos_a_pagar = int(input('Digite a quantidade de anos que vai pagar: '))
+
+meses_a_pagar = anos_a_pagar * 12
+
+porcentagem_necessaria = salario_atual * 0.30
+
+prestacao_mensal = valor_casa / meses_a_pagar
+
+if porcentagem_necessaria <= prestacao_mensal:
+    print('Não poderá comprar a casa, a prestação mensal não pode ser superior a 30% do seu salário ')
+else:
+    print(
+    f'''
+    Aprovado, sua prestação mensal ficou em R${prestacao_mensal:.2f} reais mensais 
+    ''')    
