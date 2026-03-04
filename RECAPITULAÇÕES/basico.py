@@ -157,4 +157,36 @@ else:
 print(
     f'''
     Total a pagar da tarifa: R${total} reais.
-    ''')    
+    ''')
+
+minutos = int(input('Digite os minutos que utilizou: '))
+
+if minutos < 200:
+    preco = 0.20
+elif minutos > 400:
+    preco = 0.18
+else:
+    preco = 0.15
+
+print(f'Você vai pagar este mês: R${minutos * preco:.2f}')
+
+first_number = float(input('Digite um número: '))
+second_number = float(input('Digite outro número: '))
+
+adicao = first_number + second_number
+subtracao = first_number - second_number
+multiplicacao = first_number * second_number
+divisao = first_number / second_number
+
+choice = input('Digite qual dessas operações você quer fazer (+, -, *, /): ')
+
+if choice == '+':
+    print(f'Você escolheu {choice}, então iremos somar os números {first_number} e {second_number} total = {adicao}')
+elif choice == '-':
+    print(f'Você escolheu {choice}, então iremos subtrair os números {first_number} e {second_number} total = {subtracao}')
+elif choice == '*':
+    print(f'Você escolheu {choice}, então iremos multiplicar os números {first_number} e {second_number} total = {multiplicacao}')
+elif choice == '/':
+    print(f'Você escolheu {choice}, então iremos dividir os números {first_number} e {second_number} total = {divisao}')
+else:
+    print('Preciso que digite uma operação dentre as que pedi.')
