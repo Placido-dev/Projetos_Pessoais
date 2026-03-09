@@ -1,7 +1,11 @@
-a = 10
-b = 20
+# while
 
-if not a > b:
-    print('a é maior que b')
-else:
-    print('b é maior que a')
+fim = int(input('Digite o último número do loop: '))
+print(f'Irei imprimir os valores pares do {fim}, go!')
+# contador
+x = 0
+
+# bloco
+while x <= fim:
+    print(x)
+    x = x + 2

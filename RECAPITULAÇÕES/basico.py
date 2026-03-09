@@ -238,3 +238,75 @@ print(
     Sua quantidade consumida foi de {qtd_consumido} kWh,
     Sua conta será no valor de R${preco_total:.2f} reais.
     ''')
+
+# invertendo condições
+
+a = int(input('Digite um número: '))
+
+if a < 10:
+    print(f"{a} é menor que 10")
+elif a >= 10 and a < 20:
+    print(f'{a} é maior que 10 e menor que 20')
+else:
+    print(f'{a} é maior que 20')
+
+# if else elif
+
+hora = int(input('Digite um número: '))
+
+if hora < 12:
+    print(f"Bom dia!")
+elif hora >= 12 and hora <= 18:
+    print(f'Boa tarde!')
+else:
+    print(f'Boa noite!')
+
+# if else elif
+
+media = int(input('Digite sua média: '))
+
+if media < 4:
+    print('Reprovado!')
+elif media < 7:
+    print('Recuperação!')
+else:
+    print('Passou!')
+
+
+# while
+
+x = 1
+
+while x <= 3:
+    print(f'X vale: {x}')
+    x = x + 1
+    print(f'X agora virou: {x}, somamos mais 1')
+    if x == 4:
+        print('Chegou no 4, acabou o loop!')
+    else:
+        print('Continuaremos a adicionar + 1 até chegar em 4!')
+
+# while
+
+x = 10
+
+while x != 0:
+    print(f'Contagem regressiva: {x}!')
+    x = x - 1
+    if x == 0:
+        print('Fogo!')
+
+# while
+
+fim = int(input('Digite o último número do loop: '))
+print(f'Irei imprimir até o {fim}, go!')
+# contador
+x = 1
+
+# bloco
+while x <= fim:
+    print(x)
+    x = x + 1
+    if x == fim:
+        print(f'Chegamos ao número: {x}, encerrando contagem')
+        break
