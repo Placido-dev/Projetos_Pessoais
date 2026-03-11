@@ -310,3 +310,41 @@ while x <= fim:
     if x == fim:
         print(f'Chegamos ao número: {x}, encerrando contagem')
         break
+
+fim = int(input('Digite o último número do loop: '))
+print(f'Irei imprimir os valores ímpares do {fim}, go!')
+# contador
+x = 0
+
+# bloco
+while x <= fim:
+    if x % 2 != 0:
+        print(x)
+    x = x + 1
+
+n = int(input('Tabuada do: '))
+x = 1
+
+while x <= 10:
+    print(f'{n} x {x} = {n * x}')
+    x = x + 1
+
+inicio = int(input('Tabuada do: '))
+fim = int(input('Digite o valor para parar: '))
+
+x = 0
+
+while x <= fim:
+    print(f'{inicio} x {x} = {inicio * x}')
+    x = x + 1
+
+primeiro_n = int(input('Digite o valor: '))
+repeticao = int(input('Digite o valor para repetir: '))
+result = 0
+
+contador = repeticao
+
+while contador > 0: 
+    result = result + primeiro_n
+    print(f'{primeiro_n} x {repeticao} = {result}')
+    contador = contador - 1 
