@@ -347,4 +347,29 @@ contador = repeticao
 while contador > 0: 
     result = result + primeiro_n
     print(f'{primeiro_n} x {repeticao} = {result}')
-    contador = contador - 1 
+    contador = contador - 1
+
+primeiro_n = int(input('Digite um número para dividir: ')) # é o número que vai diminuindo
+repeticao = int(input('Digite a quantidade de vezes para dividir: ')) # é o número que vai subtrair
+
+contador = 0 # é quantas vezes conseguiu subtrair
+resto = 0
+
+while primeiro_n >= repeticao:
+    primeiro_n = primeiro_n - repeticao
+    print(primeiro_n)
+    contador = contador + 1
+
+pontos = 0
+questao = 1
+
+while questao <= 3:
+    resposta = input(f'Resposta da questão {questao}: ')
+    if questao == 1 and resposta == 'b' or resposta == 'B':
+        pontos = pontos + 1
+    elif questao == 2 and resposta == 'a' or resposta == 'A':
+        pontos = pontos + 1
+    elif questao == 3 and resposta == 'c' or resposta == 'C':
+        pontos = pontos + 1
+    questao = questao + 1
+print(f'O aluno fez {pontos} ponto(s)')        
