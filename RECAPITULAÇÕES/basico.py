@@ -372,4 +372,45 @@ while questao <= 3:
     elif questao == 3 and resposta == 'c' or resposta == 'C':
         pontos = pontos + 1
     questao = questao + 1
-print(f'O aluno fez {pontos} ponto(s)')        
+print(f'O aluno fez {pontos} ponto(s)')
+
+x = 1
+soma = 0
+
+while x <= 5:
+    n = int(input(f'{x} Digite um número: '))
+    soma = soma + n
+    x = x + 1
+print(f'Média: {soma / 5:5.2f}')
+
+deposito = int(input('Digite o seu deposito: '))
+taxa_juros = int(input('Digite a taxa de juros: ')) / 100
+
+mes = 1
+valor_total = deposito
+
+while mes <= 24:
+    taxa_juros_mes = taxa_juros * valor_total
+    valor_total = valor_total + taxa_juros
+    rendimento = valor_total - deposito
+    print('-' * 40)
+    print(f'Mês: {mes}')
+    print(f'Valor total: R$ {valor_total:.2f}')
+    print(f'Juros do mês: R$ {taxa_juros_mes:.2f}')
+    print(f'Rendimento acumulado: R$ {rendimento:.2f}')
+    print('-' * 40)
+    mes = mes + 1
+
+n = 0
+qtd_num = 0
+
+while True:
+    p = int(input('Digite um número para somar ou digite 0 para sair do laço: '))
+    if p == 0:
+        break
+    qtd_num += 1
+    n += p
+    m = n / qtd_num
+print(f'Quantidade de números digitados: {qtd_num}')
+print(f'Soma dos números digitados: {n}')
+print(f'Média dos números digitados: {m:.2f}')    
