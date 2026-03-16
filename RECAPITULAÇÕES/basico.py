@@ -413,4 +413,114 @@ while True:
     m = n / qtd_num
 print(f'Quantidade de números digitados: {qtd_num}')
 print(f'Soma dos números digitados: {n}')
-print(f'Média dos números digitados: {m:.2f}')    
+print(f'Média dos números digitados: {m:.2f}')
+
+
+# CAIXA REGISTRADORA
+
+cod_1 = 1
+cod_2 = 2
+cod_3 = 3
+cod_5 = 5
+cod_9 = 9
+
+preco_1 = 0.50
+preco_2 = 1.00
+preco_3 = 4.00
+preco_5 = 7.00
+preco_9 = 8.00
+
+produto_escolhido = 0
+qtd_comprada = 0
+sub_total = 0
+total_geral = 0
+
+print('=' * 50)
+print('CAIXA REGISTRADORA DO JARDEL BOLIVIANO')
+print('=' * 50)
+print('Produtos disponíveis:')
+print('[1] Produto 1  -> R$ 0.50')
+print('[2] Produto 2  -> R$ 1.00')
+print('[3] Produto 3  -> R$ 4.00')
+print('[5] Produto 5  -> R$ 7.00')
+print('[9] Produto 9  -> R$ 8.00')
+print('=' * 50)
+print('Digite [0] no código do produto para finalizar a compra.')
+print('=' * 50)
+
+while True:
+
+    print('\n' + '-' * 50)
+    produto_escolhido = int(input('Digite o código do produto: '))
+
+    if produto_escolhido == 0:
+        print('-' * 50)
+        print('Encerrando compra...')
+        print('Calculando valor total da compra...')
+        print('-' * 50)
+        print(f'TOTAL A PAGAR: R$ {total_geral:.2f}')
+        print('=' * 50)
+        print('Obrigado por comprar no Jardel!')
+        print('=' * 50)
+        break
+
+    qtd_comprada = int(input('Digite a quantidade comprada: '))
+
+    if produto_escolhido == cod_1:
+        sub_total = preco_1 * qtd_comprada
+    elif produto_escolhido == cod_2:
+        sub_total = preco_2 * qtd_comprada
+    elif produto_escolhido == cod_3:
+        sub_total = preco_3 * qtd_comprada
+    elif produto_escolhido == cod_5:
+        sub_total = preco_5 * qtd_comprada
+    elif produto_escolhido == cod_9:
+        sub_total = preco_9 * qtd_comprada
+
+    if produto_escolhido == cod_1:
+        total_geral += sub_total
+        print('-' * 50)
+        print('Produto adicionado com sucesso!')
+        print(f'Código do produto: {produto_escolhido}')
+        print(f'Quantidade comprada: {qtd_comprada}')
+        print(f'Subtotal do produto: R$ {sub_total:.2f}')
+        print(f'Total acumulado: R$ {total_geral:.2f}')
+        print('-' * 50)
+    elif produto_escolhido == cod_2:
+        total_geral += sub_total
+        print('-' * 50)
+        print('Produto adicionado com sucesso!')
+        print(f'Código do produto: {produto_escolhido}')
+        print(f'Quantidade comprada: {qtd_comprada}')
+        print(f'Subtotal do produto: R$ {sub_total:.2f}')
+        print(f'Total acumulado: R$ {total_geral:.2f}')
+        print('-' * 50)        
+    elif produto_escolhido == cod_3:
+        total_geral += sub_total
+        print('-' * 50)
+        print('Produto adicionado com sucesso!')
+        print(f'Código do produto: {produto_escolhido}')
+        print(f'Quantidade comprada: {qtd_comprada}')
+        print(f'Subtotal do produto: R$ {sub_total:.2f}')
+        print(f'Total acumulado: R$ {total_geral:.2f}')
+        print('-' * 50)        
+    elif produto_escolhido == cod_5:
+        total_geral += sub_total
+        print('-' * 50)
+        print('Produto adicionado com sucesso!')
+        print(f'Código do produto: {produto_escolhido}')
+        print(f'Quantidade comprada: {qtd_comprada}')
+        print(f'Subtotal do produto: R$ {sub_total:.2f}')
+        print(f'Total acumulado: R$ {total_geral:.2f}')
+        print('-' * 50)        
+    elif produto_escolhido == cod_9:
+        total_geral += sub_total
+        print('-' * 50)
+        print('Produto adicionado com sucesso!')
+        print(f'Código do produto: {produto_escolhido}')
+        print(f'Quantidade comprada: {qtd_comprada}')
+        print(f'Subtotal do produto: R$ {sub_total:.2f}')
+        print(f'Total acumulado: R$ {total_geral:.2f}')
+        print('-' * 50)        
+    else:
+        print('Código digitado inválido.')
