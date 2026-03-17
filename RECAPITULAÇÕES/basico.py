@@ -550,4 +550,24 @@ while True:
         elif atual == 5:
             atual = 1
 
-        cedulas = 0    
+        cedulas = 0
+
+# Listas, dicts, tuplas, conjuntos
+
+notas = [
+    0, 0, 0, 0, 0, 0, 0
+]
+
+soma = 0
+x = 0
+
+while x < 7:
+    notas[x] = float(input(f'Nota {x}: '))
+    soma += notas[x]
+    x += 1
+x = 0
+while x < 7:
+    print(f'Nota {x}: {notas[x]:.2f}')
+    x += 1    
+
+print(f'Média da soma = {soma / x:.2f}')        
