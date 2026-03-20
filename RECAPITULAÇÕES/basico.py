@@ -587,3 +587,30 @@ while True:
         print('Você saiu do loop')
         break
     print(f'Você escolheu o número: {numeros[escolhido - 1]}')
+
+lista_1 = []
+lista_2 = []
+
+while True:
+    entrada_1 = int(input('Digite um número para adicionar a lista [0 para sair]: '))
+    if entrada_1 == 0:
+        print(f'Comando {entrada_1} digitado, sua primeira lista ficou: {lista_1}')
+        break     
+
+    lista_1.append(entrada_1)
+    print(f'Valor adicionado na primeira lista: {lista_1[-1]}.')
+    print(lista_1)
+
+while True:
+    entrada_2 = int(input('Digite outro número para adicionar na segunda lista: '))
+    if entrada_2 == 0:
+        print(f'Comando {entrada_2} digitado, sua segunda lista ficou: {lista_2}')
+        break
+
+    lista_2.append(entrada_2)
+    print(f'Valor adicionado na segunda lista: {lista_2[-1]}.')
+    print(lista_2)
+
+lista_3 = lista_1 + lista_2
+
+print(f'Lista 1 = {lista_1}, lista 2 = {lista_2}; lista 3 = {lista_3}')    
