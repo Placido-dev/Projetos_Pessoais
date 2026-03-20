@@ -571,3 +571,19 @@ while x < 7:
     x += 1    
 
 print(f'Média da soma = {soma / x:.2f}')        
+
+
+numeros = [
+    0, 0, 0, 0, 0
+]
+
+x = 0
+while x < 5:
+    numeros[x] = int(input(f'número {x + 1}: '))
+    x += 1
+while True:
+    escolhido = int(input('Que posição você deseja imprimir (0 para sair): '))
+    if escolhido == 0 or escolhido > 5:
+        print('Você saiu do loop')
+        break
+    print(f'Você escolheu o número: {numeros[escolhido - 1]}')
