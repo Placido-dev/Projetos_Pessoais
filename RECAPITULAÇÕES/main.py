@@ -3,17 +3,16 @@
 import os
 os.system("cls")
 
-numero = int(input('Digite um número [inteiro] para duplicar, triplicar e quadruplicar: '))
+pessoa = {
+    'nome': 'Guilherme',
+    'sobrenome': 'Silva',
+    'idade': '24',
+    'altura': '1.7',
+    'enderecos': [
+        {'rua': 'segredo', 'numero': 10},
+        {'rua': 'outra', 'numero': 5},
+    ],
+}
 
-def multiplicar(numero, multiplicador): 
-    result = numero * multiplicador
-    if multiplicador == 2:
-        print(f'Duplicando: {numero} -> {result}')
-    elif multiplicador == 3:
-        print(f'Triplicando: {numero} -> {result}')
-    elif multiplicador == 4:
-        print(f'Quadruplicando: {numero} -> {result}')
-
-multiplicar(numero, 2)
-multiplicar(numero, 3)
-multiplicar(numero, 4)
+for i in pessoa:
+    print(i, pessoa[i])
