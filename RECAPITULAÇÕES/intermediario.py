@@ -86,7 +86,6 @@ print(lista_3)
 
 
 
-
 # Funções
 
 numero = 10
