@@ -3,15 +3,10 @@
 import os
 os.system("cls")
 
-pessoa = {
-    'nome': 'Guilherme',
-    'sobrenome': 'Silva',
-}
+# peso / altura * altura
 
-print(len(pessoa))
-print(list(pessoa.keys()))
-print(list(pessoa.values()))
-print(list(pessoa.items()))
+def calcular_imc(peso, altura):
+    return peso / altura ** 2
 
-for chave, valor in pessoa.items():
-    print(chave, valor)
+imc = calcular_imc(70, 1.70)
+print(f'{imc:.2f}')

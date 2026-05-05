@@ -88,6 +88,38 @@ print(lista_3)
 
 # Funções
 
+def somar(a, b):
+    return a + b
+
+resultado = somar(3, 5)
+print(resultado)  # 8
+
+def eh_par(numero):       # recebe por parâmetro
+    return numero % 2 == 0  # retorna True ou False
+
+print(eh_par(4))  # True
+print(eh_par(7))  # False
+
+def calcular_imc(peso, altura):
+    return peso / altura ** 2
+
+imc = calcular_imc(70, 1.70)
+print(f'{imc:.2f}')
+
+def calcular_imc(peso, altura):
+    imc = peso / altura ** 2
+    if imc < 18.5:
+        return imc, "Abaixo do peso"
+    elif imc < 25:
+        return imc, "Peso normal"
+    elif imc < 30:
+        return imc, "Sobrepeso"
+    else:
+        return imc, "Obesidade"
+
+imc, classificacao = calcular_imc(70, 1.70)
+print(f'IMC: {imc:.2f} — {classificacao}')
+
 numero = 10
 
 def multiplicar(numero, multiplicador): 
@@ -112,3 +144,17 @@ def multiplicar(numero, multiplicador):
 multiplicar(numero, 2)
 multiplicar(numero, 3)
 multiplicar(numero, 4)
+
+
+pessoa = {
+    'nome': 'Guilherme',
+    'sobrenome': 'Silva',
+}
+
+print(len(pessoa))
+print(list(pessoa.keys()))
+print(list(pessoa.values()))
+print(list(pessoa.items()))
+
+for chave, valor in pessoa.items():
+    print(chave, valor)
