@@ -3,17 +3,18 @@
 import os
 os.system("cls")
 
-produtos = [
-    ("caneta", 1.50, 100),
-    ("caderno", 12.90, 45),
-    ("borracha", 0.75, 200),
-    ("régua", 3.20, 60),
+lista_repetidos = [
+    1, 2, 3, 4, 4, 5, 5, 5, 5, 6, 7, 7, 8, 9, 10
 ]
 
-for i in produtos:
-    print(i)
+def contar_repetidos(numeros):
+    ja_vistos = set()
+    for numero in numeros:
+        if numero in ja_vistos:
+            print('duplicado', numero)
+        else:
+            ja_vistos.add(numero)
+            print(numero)
+    return print(f'Vimos {len(ja_vistos)} valores únicos')         
 
-
-inventario = {
-    
-}
+print(contar_repetidos(lista_repetidos))
