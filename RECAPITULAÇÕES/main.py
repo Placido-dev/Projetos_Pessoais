@@ -3,18 +3,12 @@
 import os
 os.system("cls")
 
-lista_repetidos = [
-    1, 2, 3, 4, 4, 5, 5, 5, 5, 6, 7, 7, 8, 9, 10
-]
+def maior_de_tres(a, b, c):
+    if a >= b and a >= c:
+        return a
+    elif b >= a and b >= c:
+        return b
+    return c
 
-def contar_repetidos(numeros):
-    ja_vistos = set()
-    for numero in numeros:
-        if numero in ja_vistos:
-            print('duplicado', numero)
-        else:
-            ja_vistos.add(numero)
-            print(numero)
-    return print(f'Vimos {len(ja_vistos)} valores únicos')         
-
-print(contar_repetidos(lista_repetidos))
+result = maior_de_tres(a=5,b=5,c=3)
+print(result)
