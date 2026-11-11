@@ -201,3 +201,11 @@ def achar_duplicado(numeros):
     return -1
 
 print(achar_duplicado(lista_de_listas_de_inteiros[1]))
+
+for i in range(6):
+    for j in range(6):
+        if (i + j) % 2 == 0:
+            print('.', end='')
+        else:
+            print('#', end='')
+    print()

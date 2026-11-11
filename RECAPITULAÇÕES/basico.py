@@ -551,3 +551,25 @@ while True:
             atual = 1
 
         cedulas = 0
+
+cardapio = {
+    'macarrão': 20, 
+    'carne': 40, 
+    'sopa': 10, 
+    'salada': 5
+    }
+
+total = 0
+
+while True:
+    pedido_cliente = input('Digite o que quer entre macarrão, carne, sopa e salada. Para sair, digite "sair": ').lower()
+
+    if pedido_cliente == 'sair':
+        print(f'Saindo, Total = {total}.')
+        break
+
+    if pedido_cliente not in cardapio:
+        print('Não temos esse lanche, escreva novamente ou peça outro.')
+    else:
+        total += cardapio[pedido_cliente]
+        print(f'Pedido anotado, preço = {cardapio[pedido_cliente]}')        
