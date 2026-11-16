@@ -67,9 +67,9 @@ try:
     if numero < 0:
         print('Número menor do que 0 não funciona.')
         quit()
-    contador = 1    
+    contador = 0
     while contador < 10:
-        contador += 1        
+        contador += 1
         multiplicar = numero * contador
         print(f'{numero} * {contador} = {multiplicar}')
 except ValueError:
