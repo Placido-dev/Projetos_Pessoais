@@ -62,6 +62,18 @@ else:
 # Peça um número e imprima a tabuada dele de 1 a 10 usando while
 # (não use for).
 
+try:
+    numero = int(input('Digite um número inteiro para ver a tabuada dele de 1 a 10: '))
+    if numero < 0:
+        print('Número menor do que 0 não funciona.')
+        quit()
+    contador = 1    
+    while contador < 10:
+        contador += 1        
+        multiplicar = numero * contador
+        print(f'{numero} * {contador} = {multiplicar}')
+except ValueError:
+    print('Digite só números.')
 
 # -----------------------------------------------------------------------
 # 5) Soma até digitar 0
