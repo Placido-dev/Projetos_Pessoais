@@ -62,6 +62,20 @@ else:
 # Peça um número e imprima a tabuada dele de 1 a 10 usando while
 # (não use for).
 
+'''
+try:
+    numero = int(input('Digite um número inteiro para ver a tabuada dele de 1 a 10: '))
+    if numero < 0:
+        print('Número menor do que 0 não funciona.')
+        quit()
+    contador = 0
+    while contador < 10:
+        contador += 1
+        multiplicar = numero * contador
+        print(f'{numero} * {contador} = {multiplicar}')
+except ValueError:
+    print('Digite só números.')
+'''
 
 # -----------------------------------------------------------------------
 # 5) Soma até digitar 0
@@ -70,14 +84,29 @@ else:
 #   - quantos números foram digitados
 #   - a soma total
 #   - a média (cuidado com divisão por zero se o primeiro digitado já for 0)
-
-
+'''
+soma = 0
+qtd = 0
+while True:
+    valor = int(input('Digite um número (0 para sair): '))
+    if valor == 0:
+        break
+    soma += valor
+    qtd += 1
+print(f'Quantidade: {qtd}')
+print(f'Soma: {soma}')
+if qtd > 0:
+    print(f'Média: {soma / qtd:.2f}')
+else:
+    print('Nenhum número digitado, sem média.')
+ '''
 # -----------------------------------------------------------------------
 # 6) Adivinhação simples
 # Defina um número secreto fixo (ex: 42). Em um while True, peça um
 # palpite ao usuário. Diga "Maior!" se o palpite for menor que o secreto,
 # "Menor!" se for maior, e "Acertou!" quando for igual, encerrando o loop.
 # Ao final, imprima quantas tentativas o usuário usou.
+
 
 
 # -----------------------------------------------------------------------
