@@ -572,4 +572,21 @@ while True:
         print('Não temos esse lanche, escreva novamente ou peça outro.')
     else:
         total += cardapio[pedido_cliente]
-        print(f'Pedido anotado, preço = {cardapio[pedido_cliente]}')        
+        print(f'Pedido anotado, preço = {cardapio[pedido_cliente]}')
+
+codigo_1, qtd_1, valor_1 = input().split()
+codigo_1 = int(codigo_1)
+qtd_1 = int(qtd_1)
+valor_1 = float(valor_1)
+
+total_peca_1 = qtd_1 * valor_1
+
+codigo_2, qtd_2, valor_2 = input().split()
+codigo_2 = int(codigo_2)
+qtd_2 = int(qtd_2)
+valor_2 = float(valor_2)
+
+total_peca_2 = qtd_2 * valor_2
+
+total_a_pagar = total_peca_1 + total_peca_2
+print(f'VALOR A PAGAR: R$ {total_a_pagar:.2f}')        
