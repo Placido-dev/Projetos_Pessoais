@@ -574,19 +574,35 @@ while True:
         total += cardapio[pedido_cliente]
         print(f'Pedido anotado, preço = {cardapio[pedido_cliente]}')
 
-codigo_1, qtd_1, valor_1 = input().split()
-codigo_1 = int(codigo_1)
-qtd_1 = int(qtd_1)
-valor_1 = float(valor_1)
+senha = 1234
+chance = 0
 
-total_peca_1 = qtd_1 * valor_1
+while chance < 3:
+    try:
+        pedir_senha = int(input('Digite a senha, só é permitido valores inteiros e você só tem 3 tentativas: '))
+        if pedir_senha != senha:
+            chance += 1
+            print(f'Não é essa a senha, essa foi sua {chance} chance')            
+            if chance == 3:
+                print('Usuário bloqueado!')
+                break
+        else:
+            print('Acertou sua senha é:', senha)
+            break
+    except ValueError:
+        chance += 1
+        print(f'Só aceitamos números inteiros, você usou a sua {chance} chance')
+        if chance == 3:
+            print('Usuário bloqueado!')
+            break
 
-codigo_2, qtd_2, valor_2 = input().split()
-codigo_2 = int(codigo_2)
-qtd_2 = int(qtd_2)
-valor_2 = float(valor_2)
+t = int(input())
+contador = 0
 
-total_peca_2 = qtd_2 * valor_2
+a, b, c, d, e = map(int,input().split())
 
-total_a_pagar = total_peca_1 + total_peca_2
-print(f'VALOR A PAGAR: R$ {total_a_pagar:.2f}')        
+for x in a, b, c, d, e:
+    if x == t:
+        contador += 1
+
+print(contador)        
